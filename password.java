@@ -47,7 +47,7 @@ public class password {
                     }
                     else {
                         amount -= 1;
-                        Xchar.subList(0, x.get(0)).clear();
+                        Xchar.subList(0, x.get(0) >= Xchar.size() ? (Xchar.size() - 1) : x.get(0)).clear();
                         count_res.put(c, amount);
                     }
                 }
